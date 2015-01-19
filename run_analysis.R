@@ -7,21 +7,21 @@ library(data.table)
 #
 
 # read test and train data
-test_data <- read.table("UCI_HAR_Dataset/test/X_test.txt")
-train_data <- read.table("UCI_HAR_Dataset/train/X_train.txt")
+test_data <- read.table("UCI HAR Dataset/test/X_test.txt")
+train_data <- read.table("UCI HAR Dataset/train/X_train.txt")
 
 # read activity ids:
-test_activity <- read.table("UCI_HAR_Dataset/test/y_test.txt")
-train_activity <- read.table("UCI_HAR_Dataset/train/y_train.txt")
+test_activity <- read.table("UCI HAR Dataset/test/y_test.txt")
+train_activity <- read.table("UCI HAR Dataset/train/y_train.txt")
 
 # read lables (variable names):
-features_labels <- read.table("UCI_HAR_Dataset/features.txt")
-activity_labels <- read.table("UCI_HAR_Dataset/activity_labels.txt")
+features_labels <- read.table("UCI HAR Dataset/features.txt")
+activity_labels <- read.table("UCI HAR Dataset/activity_labels.txt")
 names(activity_labels) <- c("activity_id", "activity")
 
 # read subjects (test persons):
-test_subject <- read.table ("UCI_HAR_Dataset/test/subject_test.txt")
-train_subject <- read.table ("UCI_HAR_Dataset/train/subject_train.txt")
+test_subject <- read.table ("UCI HAR Dataset/test/subject_test.txt")
+train_subject <- read.table ("UCI HAR Dataset/train/subject_train.txt")
 
 # provide feature labels as variable names:
 names(test_data) <- features_labels[[2]]
