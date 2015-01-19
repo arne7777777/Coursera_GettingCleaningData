@@ -14,9 +14,8 @@ The following variables depend on measurements provided by the [Human Activity R
 
 The following variables in *tiday_data.txt* all contain the average value of all original measurements from the input dataset grouped by person (subject_id) and activity. All variables except subject_id and activity have a numeric data type.
 
-1. subject_id: Integer. The ID of the test person. Values: 1-30
-1. activity:   Character: The activity of the test person, while the measurement was taken.
-Values: WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING, LAYING
+1. subject_id: Integer. The ID of the test person. Integer. Values: 1-30.
+1. activity: The activity of the test person, while the measurement was taken. Character. Values: WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING, LAYING
 1. tBodyAcc-mean()-X: Average body acceleration, direction X axis
 1. tBodyAcc-mean()-Y: Average body acceleration, direction Y axis
 1. tBodyAcc-mean()-Z: Average body acceleration, direction Z axis
@@ -82,4 +81,4 @@ Values: WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING, LAYING
 1. fBodyAccMag-std(): Magnitude of the FFT on standard deviation of the body acceleration
 1. fBodyBodyAccJerkMag-std(): Magnitude of the FFT on standard deviation of the jerk body acceleration
 1. fBodyBodyGyroMag-std(): Magnitude of the FFT on gyroscope signal
-1. fBodyBodyGyroJerkMag-std(): Magnitude ofthe FFT on the jerk gyroscope signal
+1. fBodyBodyGyroJerkMag-std(): Magnitude of the FFT on the jerk gyroscope signal
