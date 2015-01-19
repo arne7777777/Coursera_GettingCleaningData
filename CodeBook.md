@@ -5,15 +5,14 @@ This code book describes the data in the tidy_data.txt file. For more informatio
 The file contains 180 rows with the averages of measurement observations of the [Human Activity Recognition Using Smartphones Data Set](http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones). The varibales are separated by spaces.
 
 ## Variables
-(listed in the order that they appear in the tidy_data.txt file, from left to right)
-
 The following variables depend on measurements provided by the [Human Activity Recognition Using Smartphones Data Set](http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones). The underlying measurements are described in detail the *features_info.txt* file which is part of the [input dataset](https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip). A short summary of this description:
 * Variable names starting with *t* denote time domain variables (measurements in the input dataset taken at a rate of 50Hz)
 * Variable names starting with *f* denote measurements that had been transformed in the input dataset by a Fast Fourier Transform (FFT)
 * Jerk signals had been calculated by applying a body linear acceleration and angular velocity on the underlying measurements.
 * The maginutude of some measurements had been calculuated by applying the Euclidean norm on the three-dimensional signals
 
-The following variables in *tiday_data.txt* all contain the average value of all original measurements from the input dataset grouped by person (subject_id) and activity. All variables except subject_id and activity have a numeric data type.
+The following variables in *tiday_data.txt* all contain the average value of all original measurements from the input dataset grouped by person (subject_id) and activity. All variables except subject_id and activity have a numeric data type. The variables are listed in the order they appear in the tidy_data.txt file, from left to right.
+
 
 1. subject_id: Integer. The ID of the test person. Integer. Values: 1-30.
 1. activity: The activity of the test person, while the measurement was taken. Character. Values: WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING, LAYING
