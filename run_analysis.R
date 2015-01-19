@@ -24,11 +24,8 @@ test_subject <- read.table ("UCI_HAR_Dataset/test/subject_test.txt")
 train_subject <- read.table ("UCI_HAR_Dataset/train/subject_train.txt")
 
 # provide feature labels as variable names:
-# the "-" and "()" chars wille be replaced as they can become difficult to
-# handle in further processing
-tidy_features_labels <- str_replace_all(features_labels[[2]], "-", "_")
-names(test_data) <- tidy_features_labels
-names(train_data) <- tidy_features_labels
+names(test_data) <- features_labels[[2]]
+names(train_data) <- features_labels[[2]]
 
 #
 # 1. Merge test and train data
@@ -45,7 +42,6 @@ train_data <- cbind(subject_id=train_subject[[1]], train_data)
 # merge test and train data:
 data <- rbind(test_data, train_data)
 
-
 #
 # 2. extract measurement on the mean and standard deviation
 #
@@ -55,7 +51,7 @@ data <- rbind(test_data, train_data)
 data <- data[, !duplicated(names(data))]
 
 # select only mean or std measurements:
-data <- select (data, subject_id, activity_id, contains("_mean()"), contains("_std()"))
+data <- select (data, subject_id, activity_id, contains("-mean()"), contains("-std()"))
 
 #
 # 3. use descriptive activity names to name the activities 
@@ -65,7 +61,7 @@ data <- select (data, subject_id, activity_id, contains("_mean()"), contains("_s
 data <- inner_join(activity_labels, data, by = "activity_id")
 
 # remove activity_id column, re-arrange columns:
-data <- select (data, subject_id, activity, contains("_mean()"), contains("_std()"))
+data <- select (data, subject_id, activity, contains("-mean()"), contains("-std()"))
 
 #
 # 4. appropriately label data set with descriptive variable names
