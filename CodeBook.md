@@ -13,7 +13,6 @@ The following variables depend on measurements provided by the [Human Activity R
 
 The following variables in *tiday_data.txt* all contain the average value of all original measurements from the input dataset grouped by person (subject_id) and activity. All variables except subject_id and activity have a numeric data type. The variables are listed in the order they appear in the tidy_data.txt file, from left to right.
 
-
 1. subject_id: Integer. The ID of the test person. Integer. Values: 1-30.
 1. activity: The activity of the test person, while the measurement was taken. Character. Values: WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING, LAYING
 1. tBodyAcc-mean()-X: Average body acceleration, direction X axis
