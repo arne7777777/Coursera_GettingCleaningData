@@ -4,7 +4,8 @@ This code book describes the data in the tidy_data.txt file. For more informatio
 ## File format
 The file contains 180 rows with the averages of measurement observations of the [Human Activity Recognition Using Smartphones Data Set](http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones). The varibales are separated by spaces.
 
-## Variables, listed in the order that they appear in the tidy_data.txt file (from left to right):
+## Variables
+(listed in the order that they appear in the tidy_data.txt file, from left to right)
 
 The following variables depend on measurements provided by the [Human Activity Recognition Using Smartphones Data Set](http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones). The underlying measurements are described in detail the *features_info.txt* file which is part of the [input dataset](https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip). A short summary of this description:
 * Variable names starting with *t* denote time domain variables (measurements in the input dataset taken at a rate of 50Hz)
