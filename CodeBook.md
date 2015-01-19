@@ -32,7 +32,7 @@ The following variables in *tiday_data.txt* all contain the average value of all
 1. tBodyGyroJerk-mean()-Y: Average jerk gyroscope signal, direction Y axis
 1. tBodyGyroJerk-mean()-Z: Average jerk gyroscope signal, direction Z axis
 1. tBodyAccMag-mean(): Magnitude of average body acceleration
-1. tGravityAccMag-mean(): Magnitude of agravity acceleration
+1. tGravityAccMag-mean(): Magnitude of average gravity acceleration
 1. tBodyAccJerkMag-mean(): Magnitude of average jerk body acceleration
 1. tBodyGyroMag-mean(): Magnitude of average gyroscope signal
 1. tBodyGyroJerkMag-mean(): Magnitude of average jerk gyroscope signal
@@ -69,9 +69,9 @@ The following variables in *tiday_data.txt* all contain the average value of all
 1. tBodyAccJerkMag-std(): Magnitude of standard deviation jerk body acceleration
 1. tBodyGyroMag-std(): Magnitude of standard deviation of the gyroscope signal
 1. tBodyGyroJerkMag-std(): Magnitude of  standard deviation of the jerk gyroscope signal
-1. fBodyAcc-std()-X: FFT on standard deviation of the gyroscope signal, direction X axis
-1. fBodyAcc-std()-Y: FFT on standard deviation of the gyroscope signal, direction Y axis
-1. fBodyAcc-std()-Z: FFT on standard deviation of the gyroscope signal, direction Z axis
+1. fBodyAcc-std()-X: FFT on standard deviation of the body acceleration, direction X axis
+1. fBodyAcc-std()-Y: FFT on standard deviation of the body acceleration, direction Y axis
+1. fBodyAcc-std()-Z: FFT on standard deviation of the body acceleration, direction Z axis
 1. fBodyAccJerk-std()-X: FFT on the standard deviation of the jerk body acceleration, direction X axis
 1. fBodyAccJerk-std()-Y: FFT on the standard deviation of the jerk body acceleration, direction Y axis
 1. fBodyAccJerk-std()-Z: FFT on the standard deviation of the jerk body acceleration, direction Z axis
